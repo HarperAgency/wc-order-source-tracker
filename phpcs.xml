@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<ruleset name="CM Order Source Tracker">
+    <description>PHPCS ruleset for CM Order Source Tracker.</description>
+
+    <file>cm-order-source-tracker.php</file>
+    <file>uninstall.php</file>
+    <file>includes/</file>
+
+    <arg name="basepath" value="."/>
+    <arg name="extensions" value="php"/>
+    <arg name="colors"/>
+    <arg value="sp"/>
+
+    <rule ref="WordPress">
+        <exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
+        <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
+    </rule>
+
+    <rule ref="WordPress.WP.I18n">
+        <properties>
+            <property name="text_domain" type="array" value="cm-order-source-tracker"/>
+        </properties>
+    </rule>
+
+    <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+        <properties>
+            <property name="prefixes" type="array" value="ClarityMomentum,cm_ost,CM_OST"/>
+        </properties>
+    </rule>
+</ruleset>

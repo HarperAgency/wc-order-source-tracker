@@ -1,0 +1,100 @@
+/**
+ * CM Order Source Tracker - Admin column badge styles.
+ *
+ * @package ClarityMomentum\OrderSourceTracker
+ */
+
+/* Column width */
+.column-cm_source {
+	width: 120px;
+}
+
+/* Badge base */
+.cm-ost-source {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.6;
+	white-space: nowrap;
+	background: #e5e7eb;
+	color: #374151;
+}
+
+/* Empty / direct */
+.cm-ost-source--empty,
+.cm-ost-source--direct {
+	background: #f3f4f6;
+	color: #9ca3af;
+}
+
+/* Paid search */
+.cm-ost-source--paid_search {
+	background: #dbeafe;
+	color: #1d4ed8;
+}
+
+/* Paid social */
+.cm-ost-source--paid_social {
+	background: #ede9fe;
+	color: #6d28d9;
+}
+
+/* Organic */
+.cm-ost-source--organic {
+	background: #d1fae5;
+	color: #065f46;
+}
+
+/* Social (organic) */
+.cm-ost-source--social {
+	background: #fce7f3;
+	color: #9d174d;
+}
+
+/* Email */
+.cm-ost-source--email {
+	background: #fef3c7;
+	color: #92400e;
+}
+
+/* Referral */
+.cm-ost-source--referral {
+	background: #e0f2fe;
+	color: #0369a1;
+}
+
+/* Meta box */
+.cm-ost-metabox h4 {
+	margin: 10px 0 4px;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #6b7280;
+	letter-spacing: 0.04em;
+}
+
+.cm-ost-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 12px;
+}
+
+.cm-ost-table th,
+.cm-ost-table td {
+	padding: 3px 4px;
+	vertical-align: top;
+	border-bottom: 1px solid #f3f4f6;
+}
+
+.cm-ost-table th {
+	width: 40%;
+	color: #6b7280;
+	font-weight: 400;
+	text-align: left;
+}
+
+.cm-ost-table td {
+	color: #111827;
+	word-break: break-all;
+}
